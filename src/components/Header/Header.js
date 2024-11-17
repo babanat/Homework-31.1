@@ -9,7 +9,6 @@ const Header = () => (
       <Logo />
       <Navigation />
     </div>
-    {/* Личный кабинет с отступом в 180px */}
     <div className=" flex items-center space-x-6">
       <PersonalAccountLink />
     </div>
