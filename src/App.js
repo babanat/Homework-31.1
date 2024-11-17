@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Poslugi from "./pages/Poslugi";
 import CurrencyConverter from "./pages/CurrencyConverter";
@@ -13,8 +13,9 @@ function App() {
       <div className="min-h-screen bg-primary">
         <Header />
         <Routes>
-          <Route path="/poslugi" element={<Poslugi />} />
+          <Route path="/" element={<Navigate to="/converter" />} />
           <Route path="/converter" element={<CurrencyConverter />} />
+          <Route path="/poslugi" element={<Poslugi />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/ask-question" element={<AskQuestion />} />
           <Route path="/personal-account" element={<PersonalAccount />} />
@@ -26,5 +27,4 @@ function App() {
 }
 
 export default App;
-
 
