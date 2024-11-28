@@ -1,3 +1,3 @@
-const CurrencyConverter = () => <div className="text-center">Конвертер валют</div>;
+const CurrencyConverter = () => <div className="text-center"></div>;
 export default CurrencyConverter;
 

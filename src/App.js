@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Body from "./components/body/Body";
 import Poslugi from "./pages/Poslugi";
 import CurrencyConverter from "./pages/CurrencyConverter";
 import Contacts from "./pages/Contacts";
@@ -12,6 +13,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-primary">
         <Header />
+        <Body />
         <Routes>
           <Route path="/" element={<Navigate to="/converter" />} />
           <Route path="/converter" element={<CurrencyConverter />} />
