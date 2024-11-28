@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Body = () => {
   return (
@@ -11,12 +11,15 @@ const Body = () => {
       >
         <div className="flex justify-around items-center h-full px-8">
           <div className="text-left max-w-lg">
-            <h1 className="text-4xl font-bold text-[#F6F7FF] mb-4">Чіп Чендж</h1>
-            <p className="text-lg text-[#E0E1EA] mb-6">Обмінник валют - навчальний</p>
+            <h1 className="text-4xl font-roboto font-bold text-[54px] text-[#F6F7FF] mb-4">
+              Чіп Чендж
+            </h1>
+            <p className="text-[#E0E1EA] font-roboto font-bold text-[20px]  mb-6">
+              Обмінник валют - навчальний
+            </p>
             <button
-              className="w-[234px] h-[53px] rounded-[4px] bg-[#F6F7FF] text-[#707C87] text-sm font-medium"
-              onClick={() => {
-              }}
+              className="w-[234px] h-[53px] rounded-[4px] bg-[#F6F7FF] text-[#707C87] font-roboto font-medium text-[18px]"
+              onClick={() => {}}
             >
               Конвертер валют
             </button>

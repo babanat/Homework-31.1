@@ -1,6 +1,12 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Header from "./components/Header/Header";
 import Body from "./components/body/Body";
+import CurrencyConverterIntro from "./components/body/CurrencyConverterIntro";
 import Poslugi from "./pages/Poslugi";
 import CurrencyConverter from "./pages/CurrencyConverter";
 import Contacts from "./pages/Contacts";
@@ -14,6 +20,7 @@ function App() {
       <div className="min-h-screen bg-primary">
         <Header />
         <Body />
+        <CurrencyConverterIntro />
         <Routes>
           <Route path="/" element={<Navigate to="/converter" />} />
           <Route path="/converter" element={<CurrencyConverter />} />
@@ -29,4 +36,3 @@ function App() {
 }
 
 export default App;
-

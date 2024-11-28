@@ -4,8 +4,7 @@ import PersonalAccountLink from "./PersonalAccountLink";
 
 const Header = () => (
   <header className="flex justify-around items-center bg-[#F6F7FF] p-8 ">
-    
-    <div className="flex items-center space-x-20"> 
+    <div className="flex items-center space-x-20">
       <Logo />
       <Navigation />
     </div>
@@ -16,5 +15,3 @@ const Header = () => (
 );
 
 export default Header;
-
-
